@@ -1,0 +1,4 @@
+usr/bin/basket
+usr/lib/*/libbasketcommon.so.*
+usr/lib/*/qt5/plugins/*basket*
+usr/share/applications/basket.desktop

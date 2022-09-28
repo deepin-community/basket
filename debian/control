@@ -1,0 +1,69 @@
+Source: basket
+Section: kde
+Priority: optional
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@alioth-lists.debian.net>
+Uploaders: Mark Purcell <msp@debian.org>,
+           Sune Vuorela <debian@pusling.com>,
+           Luigi Toscano <luigi.toscano@tiscali.it>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               extra-cmake-modules,
+               libgpgme11-dev,
+               libkf5archive-dev,
+               libkf5completion-dev,
+               libkf5config-dev,
+               libkf5configwidgets-dev,
+               libkf5coreaddons-dev,
+               libkf5crash-dev,
+               libkf5dbusaddons-dev,
+               libkf5doctools-dev,
+               libkf5filemetadata-dev,
+               libkf5globalaccel-dev,
+               libkf5guiaddons-dev,
+               libkf5i18n-dev,
+               libkf5iconthemes-dev,
+               libkf5kcmutils-dev,
+               libkf5kio-dev,
+               libkf5notifications-dev,
+               libkf5parts-dev,
+               libkf5service-dev,
+               libkf5textwidgets-dev,
+               libkf5widgetsaddons-dev,
+               libkf5windowsystem-dev,
+               libkf5xmlgui-dev,
+               libphonon4qt5-dev,
+               libx11-dev,
+               pkg-config,
+               pkg-kde-tools,
+               qtbase5-dev,
+               shared-mime-info
+Homepage: https://launchpad.net/basket/
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/qt-kde-team/extras/basket.git
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/extras/basket
+
+Package: basket
+Architecture: any
+Depends: basket-data (>=${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Description: multi-purpose note-taking application
+ This application provides as many baskets (drawers) as you wish; Several
+ kinds of objects (texts, URLs, images,...) can be drag-n-drop'd into it.
+ .
+ Objects can be edited, copied, dragged... So, they can be arranged
+ according to users' taste. Moreover, Basket allows you to keep all objects
+ you want in one place, keep data on hand, take notes...
+
+Package: basket-data
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: basket (<< 1.81-3~)
+Breaks: basket (<< 1.81-3~)
+Description: data files for BasKet Notepads
+ This application provides as many baskets (drawers) as you wish; Several
+ kinds of objects (texts, URLs, images,...) can be drag-n-drop'd into it.
+ .
+ Objects can be edited, copied, dragged... So, they can be arranged
+ according to users' taste. Moreover, Basket allows you to keep all objects
+ you want in one place, keep data on hand, take notes...
+ .
+ This package contains arch independent data for Basket.

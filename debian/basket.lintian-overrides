@@ -1,0 +1,4 @@
+# private library
+basket: package-name-doesnt-match-sonames libbasketcommon4
+# private library
+basket: no-symbols-control-file

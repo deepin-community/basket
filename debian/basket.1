@@ -1,0 +1,186 @@
+.TH Basket\ Note\ Pads "1" "October 2014" "Basket Note Pads 2.10-beta"
+.SH NAME
+basket \- Note-taking application
+.SH SYNOPSIS
+.B basket
+[\fIQt-options\fR] [\fIKDE-options\fR] [\fIoptions\fR] [\fIfile\fR]
+.SH DESCRIPTION
+Basket Note Pads is a application to allow you to quickly take notes, save your ideas and assist in quickly find them later.
+Organizing your notes has never been so easy.
+Basket also allows integration with Kontact and rest of kde environment.
+
+.SH OPTIONS
+.SS "Basket Note Pads options:"
+.TP
+\fB\-d\fR, \fB\-\-debug\fR
+Show the debug window
+.HP
+\fB\-f\fR, \fB\-\-data\-folder\fR <folder> Custom folder where to load and save basket data and application data (useful for debugging purpose)
+.TP
+\fB\-h\fR, \fB\-\-start\-hidden\fR
+Hide the main window in the system tray icon on startup
+.TP
+\fB\-k\fR, \fB\-\-use\-drkonquy\fR
+When crashing, use the standard KDE report dialog instead of sending an email
+.SS "Arguments:"
+.TP
+file
+Open basket archive or template
+.SS "Generic options:"
+.TP
+\fB\-\-help\fR
+Show help about options
+.TP
+\fB\-\-help\-qt\fR
+Show Qt specific options
+.TP
+\fB\-\-help\-kde\fR
+Show KDE specific options
+.TP
+\fB\-\-help\-all\fR
+Show all options
+.TP
+\fB\-\-author\fR
+Show author information
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+Show version information
+.TP
+\fB\-\-license\fR
+Show license information
+.TP
+\fB\-\-\fR
+End of options
+.SS "Qt options:"
+.TP
+\fB\-\-display\fR <displayname>
+Use the X\-server display 'displayname'
+.TP
+\fB\-\-session\fR <sessionId>
+Restore the application for the given 'sessionId'
+.TP
+\fB\-\-cmap\fR
+Causes the application to install a private color
+map on an 8\-bit display
+.TP
+\fB\-\-ncols\fR <count>
+Limits the number of colors allocated in the color
+cube on an 8\-bit display, if the application is
+using the QApplication::ManyColor color
+specification
+.TP
+\fB\-\-nograb\fR
+tells Qt to never grab the mouse or the keyboard
+.TP
+\fB\-\-dograb\fR
+running under a debugger can cause an implicit
+\fB\-nograb\fR, use \fB\-dograb\fR to override
+.TP
+\fB\-\-sync\fR
+switches to synchronous mode for debugging
+.TP
+\fB\-\-fn\fR, \fB\-\-font\fR <fontname>
+defines the application font
+.TP
+\fB\-\-bg\fR, \fB\-\-background\fR <color> sets the default background color and an
+application palette (light and dark shades are
+calculated)
+.HP
+\fB\-\-fg\fR, \fB\-\-foreground\fR <color> sets the default foreground color
+.TP
+\fB\-\-btn\fR, \fB\-\-button\fR <color>
+sets the default button color
+.TP
+\fB\-\-name\fR <name>
+sets the application name
+.TP
+\fB\-\-title\fR <title>
+sets the application title (caption)
+.TP
+\fB\-\-visual\fR TrueColor
+forces the application to use a TrueColor visual on
+an 8\-bit display
+.TP
+\fB\-\-inputstyle\fR <inputstyle> sets XIM (X Input Method) input style. Possible
+values are onthespot, overthespot, offthespot and
+root
+.TP
+\fB\-\-im\fR <XIM server>
+set XIM server
+.TP
+\fB\-\-noxim\fR
+disable XIM
+.TP
+\fB\-\-reverse\fR
+mirrors the whole layout of widgets
+.SS "KDE options:"
+.TP
+\fB\-\-caption\fR <caption>
+Use 'caption' as name in the titlebar
+.TP
+\fB\-\-icon\fR <icon>
+Use 'icon' as the application icon
+.TP
+\fB\-\-miniicon\fR <icon>
+Use 'icon' as the icon in the titlebar
+.TP
+\fB\-\-config\fR <filename>
+Use alternative configuration file
+.TP
+\fB\-\-dcopserver\fR <server>
+Use the DCOP Server specified by 'server'
+.TP
+\fB\-\-nocrashhandler\fR
+Disable crash handler, to get core dumps
+.TP
+\fB\-\-waitforwm\fR
+Waits for a WM_NET compatible windowmanager
+.TP
+\fB\-\-style\fR <style>
+sets the application GUI style
+.TP
+\fB\-\-geometry\fR <geometry>
+sets the client geometry of the main widget \- see man X for the argument format
+.TP
+\fB\-\-nofork\fR
+Don't run in the background.
+.SH "SEE ALSO"
+The full documentation for
+.B Basket Note Pads:
+is maintained as a KDE help file.
+If Konqueror and KHelpcenter are fully installed on your computer, accessing
+.IP
+.B help:/basket
+.PP
+should give you access to the complete manual.
+.SH "AUTHOR"
+.B Basket Note Pads
+Note Pads was written by
+.IP
+Gleb Baryshev <gleb.baryshev@gmail.com>
+.IP
+Dr. Robert Marmorstein <robert@narnia.homeunix.com>
+.IP
+Matt Rogers <mattr@kde.org>
+.IP
+Lionel Petit <lionelpetit@gmail.com>
+.IP
+Kelvie Wong <kelvie@ieee.org>
+.IP
+Amir Pakdel <pakdel@gmail.com>
+.IP
+Brian C. Milco <bcmilco@gmail.com>
+.IP
+S\['e]bastien Lao\[^u]t <slaout@linux62.org>
+.IP
+kodaaja <kodaaja@68e0c82f-6715-0410-a4b6-c4571a790354>
+.IP
+Petri Damst\['e]n <damu@iki.fi>
+.IP
+Alex Gontmakher <gsasha@cs.technion.ac.il>
+.IP
+Marco Martin <m4rt@libero.it>
+.PP
+Please report bugs to https://bugs.launchpad.net/basket
+.SH "OTHER"
+This manpage was originally derived from help2man by Sune Vuorela <debian@pusling.com> for the Debian project (but may be used by others). License: GPL2 like Basket Note Pads

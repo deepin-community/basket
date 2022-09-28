@@ -1,0 +1,4 @@
+version=3
+
+opts="uversionmangle=s/-([^0-9])/~\\1/" \
+  https://launchpad.net/basket/kde5/ https://launchpad.net/basket/kde5/.+/\+download/basket-([^-]+)-[^-]+.tar.bz2
